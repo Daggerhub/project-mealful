@@ -10,6 +10,7 @@ export const NavContainer = styled.div`
   background-color: white;
   top: 0;
   z-index: 100;
+  box-shadow: ${({ navbar }) => (navbar ? "0 10px 20px 0 rgba(0,0,0,.05);" : "")};
   @media (max-width: 885px) {
     justify-content: space-between;
   }

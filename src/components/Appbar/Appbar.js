@@ -13,9 +13,21 @@ import { GiHamburgerMenu as HamMenu } from "react-icons/gi";
 
 export default function Appbar() {
   const [listOpen, setListOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const setNavbarActive = () => {
+      if(window.scrollY > 10){
+        setNavbar(true)
+      }
+      else{
+        setNavbar(false)
+      }
+  }
+
+  window.addEventListener('scroll', setNavbarActive);
 
   return (
-    <NavContainer onScroll>
+    <NavContainer navbar={navbar}>
       <LogoContainer src={Logo} />
       <HamburgerMenu onClick={() => setListOpen(!listOpen)}>
         <HamMenu />

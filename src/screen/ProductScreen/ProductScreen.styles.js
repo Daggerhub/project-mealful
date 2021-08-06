@@ -61,7 +61,9 @@ export const CardHeader = styled.h1`
 
 export const ButtonContainer = styled.div`
   display: flex;
-`;
+  @media (max-width: 786px) {
+    justify-content: space-around;
+  }`;
 
 export const Buttons = styled.div`
   padding: 12px 40px;
@@ -73,7 +75,7 @@ export const Buttons = styled.div`
     color: white;
   }
   @media (max-width: 786px) {
-    padding: 12px 25px;
+    padding: 10px 15px;
     font-size: 12px;
   }
 `;
@@ -107,8 +109,8 @@ export const ScheduleMealButton = styled.button`
   max-width: 1600px;
   display: flex;
   justify-content: center;
-  margin: 40px auto;
-  padding: 12px 80px;
+  margin: 30px auto;
+  padding: 12px 75px;
   border-radius: 10px;
   border: none;
   background-color: orange;
@@ -118,7 +120,7 @@ export const ScheduleMealButton = styled.button`
 `;
 
 export const Line = styled.hr`
-  max-width: 1300px;
+  max-width: 1250px;
   margin: auto;
   color: black;
 `;

@@ -29,7 +29,7 @@ export const Column = styled.div`
   text-align: left;
   margin-left: 60px;
   @media (max-width: 750px) {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 `;
 
