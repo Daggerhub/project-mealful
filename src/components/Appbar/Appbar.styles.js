@@ -6,6 +6,10 @@ export const NavContainer = styled.div`
   align-items: center;
   padding: 0 2rem;
   flex-wrap: wrap;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 100;
   @media (max-width: 885px) {
     justify-content: space-between;
   }
@@ -22,8 +26,8 @@ export const HamburgerMenu = styled.div`
 export const AccountLink = styled.span``;
 
 export const LogoContainer = styled.img`
-  height: 3rem;
-  padding: 1rem 0;
+  height: 2.3rem;
+  padding: 1.2rem 0;
   @media (max-width: 885px) {
     height: 2rem;
   }
@@ -51,11 +55,14 @@ export const MenuLink = styled.a`
   color: black;
   text-decoration: none;
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
   padding: 1rem 2rem;
   transition: all 0.3s ease-in;
   &:hover {
     color: orange;
+  }
+  @media (max-width: 885px) {
+    font-size: 0.9rem;
   }
 `;

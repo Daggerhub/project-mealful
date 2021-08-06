@@ -15,7 +15,7 @@ export default function Appbar() {
   const [listOpen, setListOpen] = useState(false);
 
   return (
-    <NavContainer>
+    <NavContainer onScroll>
       <LogoContainer src={Logo} />
       <HamburgerMenu onClick={() => setListOpen(!listOpen)}>
         <HamMenu />
